@@ -35,8 +35,8 @@
 }
 
 .code {
-  font-weight: 700;
-  font-family: var(--font-mono);
+  font-weight: 600;
+  @apply font-mono;
 }
 
 .grid {
@@ -62,6 +62,7 @@
 .card h2 {
   font-weight: 600;
   margin-bottom: 0.7rem;
+  @apply font-mono;
 }
 
 .card p {
