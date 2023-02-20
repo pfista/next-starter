@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is pfista's personal [Next.js](https://nextjs.org/) starter kit bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+It has been configured with the following:
+- Typescript
+- Tailwind CSS
+- Supabase
+- Github Codespaces support
+- Vercel Analytics
+- Custom serif, sans, and mono fonts
 
 ## Getting Started
 
