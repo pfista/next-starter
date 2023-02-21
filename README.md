@@ -44,3 +44,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Generating types using Supabase CLI
+
+First login:
+
+```
+npx supabase login
+```
+
+Generate types:
+```
+npx supabase gen types typescript --project-id SUPABASE_PROJECT_REFERENCE_ID > types/supabase.ts
+```
+
+Or, after setting your .env.local file use the command `npm run update-schema` 
