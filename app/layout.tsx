@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next';
 import AnalyticsWrapper from '../components/analytics';
+import Sidebar from '../components/sidebar';
 import localFont from '@next/font/local';
 
 const karla = localFont({
@@ -71,13 +72,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${karla.variable} ${gloock.variable} ${azeret.variable}`}>
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
-      <body className='antialiased'>{children}
-      <AnalyticsWrapper />
+      <body className='antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto'>
+        <Sidebar />
+        <main className="flex-auto min-w-0 flex flex-col">
+          {children}
+          <AnalyticsWrapper />
+        </main>
       </body>
     </html>
   )

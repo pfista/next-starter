@@ -1,90 +1,47 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Link from 'next/link'
+
+import {
+  ArrowIcon
+} from 'components/icons';
 
 export const revalidate = 60;
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
+    <>
+      <section>
+        <h1 className="font-bold text-3xl font-serif">Michael Pfister</h1>
+        <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">
+          Hey, I'm Michael. I'm the founder at <Link href="https://dawnpatrol.llc">dawn patrol</Link>, a product studio and consultancy, building things like <Link href='https://sharecaster.xyz'>sharecaster.xyz</Link>, <Link href="https://farcast.club">farcast.club</Link>, and <Link href="/projects">more</Link>.
         </p>
-        <div>
+        <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">
+          In a past life I was VP Product at <Link href="https://nylas.com">nylas</Link> and have worked in a variety of roles across product, engineering, and customer success. I previously co-founded <Link href="https://gest.co">gest.co</Link>, a human computer interaction company.
+        </p>
+        <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-500 dark:text-neutral-400">
+        <li>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
+            className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             rel="noopener noreferrer"
+            target="_blank"
+            href="https://warpcast.com/pfista/"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+            <ArrowIcon />
+            <p className="h-7">follow me on warpcast</p>
           </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className='font-mono'>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className='!font-mono'>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className='!font-sans'>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className='font-serif'>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        </li>
+        <li>
+          <a
+            className="flex items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
+            rel="noopener"
+            target="_blank"
+            href="https://leerob.io?ref=michaelpfister.com"
+          >
+            <ArrowIcon />
+            <p className="h-7">site by leerob.io</p>
+          </a>
+        </li>
+      </ul>
+      </section>
+    </>
   )
 }
