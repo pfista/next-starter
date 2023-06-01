@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next';
 import AnalyticsWrapper from '../components/analytics';
 import Sidebar from '../components/sidebar';
-import localFont from '@next/font/local';
+import localFont from "next/font/local";
 
 const karla = localFont({
   src: '../public/fonts/Karla-VariableFont_wght.ttf',
