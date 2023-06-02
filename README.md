@@ -1,6 +1,7 @@
 This is pfista's personal [Next.js](https://nextjs.org/) starter kit bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 It has been configured with the following:
+
 - Typescript
 - Tailwind CSS
 - Supabase
@@ -13,10 +14,7 @@ It has been configured with the following:
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
 ```
 
@@ -54,8 +52,9 @@ npx supabase login
 ```
 
 Generate types:
+
 ```
 npx supabase gen types typescript --project-id SUPABASE_PROJECT_REFERENCE_ID > types/supabase.ts
 ```
 
-Or, after setting your .env.local file use the command `npm run update-schema` 
+Or, after setting your .env.local file use the command `npm run update-schema`

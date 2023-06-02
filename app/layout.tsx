@@ -68,7 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang='en'
-      className={`${karla.variable} ${gloock.variable} ${azeret.variable}`}
+      className={`${karla.variable} ${gloock.variable} ${azeret.variable} text-[#111010] bg-[#fefefe] dark:text-white dark:bg-[#111010]`}
     >
       <head />
       <body className='antialiased max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 lg:mx-auto'>
