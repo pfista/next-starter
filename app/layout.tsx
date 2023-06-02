@@ -6,7 +6,6 @@ import localFont from 'next/font/local'
 
 const karla = localFont({
   src: '../public/fonts/Karla-VariableFont_wght.ttf',
-  weight: '700',
   variable: '--font-karla',
   display: 'swap',
 })
